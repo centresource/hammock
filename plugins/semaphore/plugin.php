@@ -9,7 +9,7 @@
 //
 // -----------------------------------------------------------------------------
 //
-class fogbugz extends SlackServicePlugin
+class semaphore extends SlackServicePlugin
 {
   public $name = "Semaphore Build Status";
   public $desc = "Process SemaphoreApp.com build status notifications and forward them on to Slack";
