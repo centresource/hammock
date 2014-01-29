@@ -58,6 +58,7 @@ class semaphore extends SlackServicePlugin
   }
 
   public function onHook($req) {
+    $req = json_decode($req['post']['payload'], true);
     $chatMessage = '';
     $resultEmoji = $req['result'] === 'failed' ? ':x:' : ':white_check_mark';
 
